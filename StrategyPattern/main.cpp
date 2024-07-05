@@ -25,6 +25,24 @@ public:
 	}
 };
 
+class SelectionSortStrategy : public SortStrategy
+{
+public:
+	void sort(std::vector<int>& input) override
+	{
+		for (int i = 0; i < input.size() - 1; i++)
+		{
+			int min = i;
+			for (int j = i + 1; j < input.size(); j++)
+			{
+				if (input[min] > input[j]) min = j;
+			}
+
+			std::swap(input[min], input[i]);
+		}
+	}
+};
+
 class InsertionSortStrategy : public SortStrategy
 {
 public:
@@ -76,7 +94,7 @@ int main()
 	v2->sort();
 	v2->print();
 
-	v2->set_strategy(new InsertionSortStrategy);
+	v2->set_strategy(new SelectionSortStrategy);
 	v2->custom_vector = { 4,2,1,5,8,9,3 };
 	v2->sort();
 	v2->print();
