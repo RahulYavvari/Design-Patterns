@@ -1,8 +1,8 @@
 # Observer Pattern
 
-Your code is an implementation of the **Observer Pattern**. This design pattern is part of the behavioral patterns and is used when there is a one-to-many relationship between objects, such that when one object (the subject or observable) changes its state, all dependent objects (observers) are notified and updated automatically.
+This design pattern is part of the behavioral patterns and is used when there is a one-to-many relationship between objects, such that when one object (the subject or observable) changes its state, all dependent objects (observers) are notified and updated automatically.
 
-## Key Components in Your Code
+## Key Components in the Code
 
 1. **IObserver Interface**:
    - Defines the `update` method which observers must implement.
