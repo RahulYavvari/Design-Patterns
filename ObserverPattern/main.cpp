@@ -97,7 +97,9 @@ int main()
 	WeatherStation->add(user4);
 	WeatherStation->add(user5);
 
-
 	WeatherStation->set_state(27.8946);
 	WeatherStation->notify();
+
+	delete WeatherStation;
+	delete user1, user2, user3, user4, user5;
 }
