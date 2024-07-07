@@ -29,9 +29,3 @@ To get started with these design patterns:
 2. Open the solution file (`DesignPatterns.sln`) in Visual Studio. Each design pattern is set up as a separate project within the solution.
 
 3. Alternatively, you can compile and run the `main.cpp` file in each pattern's folder using your preferred C++ compiler.
-
-
-## Contributing
-
-Contributions are welcome! If you have a design pattern you would like to add or improve, please fork the repository and create a pull request.
-
